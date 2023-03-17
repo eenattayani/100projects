@@ -1,18 +1,28 @@
-//  Font
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
-
-// Variables
-$primaryColor: #2a1e33;
-$secondaryColor: #c6cbcb;
-$tertiaryColor: #7595ec;
+@import "fonts";
+@import "variables";
+@import "mixins";
 
 // Styles
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url(../img/background.png);
-  background-position: top 100px right 100px;
-  background-repeat: no-repeat;
-  background-size: 50vmax;
+
+  &::before {
+    content: "";
+    background-image: url(../img/background.png);
+    background-position: top 100px right 100px;
+    background-repeat: no-repeat;
+    background-size: 50vmax;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (max-width: 992px) {
+      background-position: top 90px right 20px;
+      opacity: 0.6;
+    }
+  }
 }
 
 // navigation / navbar
@@ -36,6 +46,10 @@ body {
       font-size: 0.7rem;
       font-weight: 400;
     }
+    .title-second {
+      font-weight: 300;
+      margin-left: 0;
+    }
   }
 
   #navbarNav {
@@ -53,6 +67,82 @@ body {
           }
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: -1em;
+  }
+}
+
+// custom section
+.custom-section {
+  margin-top: 5em;
+
+  .span-garis {
+    width: 1em;
+    padding-bottom: 2.5em;
+    display: block;
+    border-top: 2px solid black;
+    color: transparent;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: $primaryColor;
+    white-space: nowrap;
+    line-height: 0;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: $primaryColor;
+    white-space: nowrap;
+    line-height: 1.5;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: $primaryColor;
+    line-height: 1.2;
+    margin-top: 1em;
+  }
+
+  a {
+    margin-top: 1em;
+    border: solid 1px $primaryColor;
+    @include tombol;
+
+    &:hover {
+      color: $primaryColor;
+      background-color: transparent;
+    }
+  }
+
+  img {
+    margin-top: 3em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    width: 3em;
+    background-color: aliceblue;
+    border-radius: 50%;
+  }
+
+  .span-link {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: 3em;
+    text-align: center;
+    h2,
+    h3,
+    p {
+      text-shadow: 2px 2px 3px rgba($primaryColor, 0.3);
     }
   }
 }

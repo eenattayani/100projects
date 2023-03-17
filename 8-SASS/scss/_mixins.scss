@@ -1,0 +1,11 @@
+// mixin
+@mixin tombol {
+  display: inline-block;
+  color: white;
+  background-color: $primaryColor;
+  border-radius: 2em;
+  padding: 0.2em 1.4em;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s;
+}

@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
+}
+body::before {
+  content: "";
   background-image: url(../img/background.png);
   background-position: top 100px right 100px;
   background-repeat: no-repeat;
   background-size: 50vmax;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 992px) {
+  body::before {
+    background-position: top 90px right 20px;
+    opacity: 0.6;
+  }
 }
 
 .custom-nav .navbar-brand img {
@@ -25,6 +39,10 @@ body {
   font-size: 0.7rem;
   font-weight: 400;
 }
+.custom-nav .navbar-brand .title-second {
+  font-weight: 300;
+  margin-left: 0;
+}
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
   color: #2a1e33;
   font-weight: 400;
@@ -34,4 +52,80 @@ body {
 }
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link:hover {
   color: #dcd2e4;
+}
+@media screen and (max-width: 992px) {
+  .custom-nav {
+    margin-top: -1em;
+  }
+}
+
+.custom-section {
+  margin-top: 5em;
+}
+.custom-section .span-garis {
+  width: 1em;
+  padding-bottom: 2.5em;
+  display: block;
+  border-top: 2px solid black;
+  color: transparent;
+}
+.custom-section h2 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #2a1e33;
+  white-space: nowrap;
+  line-height: 0;
+}
+.custom-section h3 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #2a1e33;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+.custom-section p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #2a1e33;
+  line-height: 1.2;
+  margin-top: 1em;
+}
+.custom-section a {
+  margin-top: 1em;
+  border: solid 1px #2a1e33;
+  display: inline-block;
+  color: white;
+  background-color: #2a1e33;
+  border-radius: 2em;
+  padding: 0.2em 1.4em;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.custom-section a:hover {
+  color: #2a1e33;
+  background-color: transparent;
+}
+.custom-section img {
+  margin-top: 3em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+  width: 3em;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+.custom-section .span-link {
+  font-weight: 700;
+  font-size: 1rem;
+}
+@media screen and (max-width: 992px) {
+  .custom-section {
+    margin-top: 3em;
+    text-align: center;
+  }
+  .custom-section h2,
+.custom-section h3,
+.custom-section p {
+    text-shadow: 2px 2px 3px rgba(42, 30, 51, 0.3);
+  }
 }/*# sourceMappingURL=main.css.map */
