@@ -1,0 +1,58 @@
+//  Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+
+// Variables
+$primaryColor: #2a1e33;
+$secondaryColor: #c6cbcb;
+$tertiaryColor: #7595ec;
+
+// Styles
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../img/background.png);
+  background-position: top 100px right 100px;
+  background-repeat: no-repeat;
+  background-size: 50vmax;
+}
+
+// navigation / navbar
+.custom-nav {
+  .navbar-brand {
+    img {
+      width: 25px;
+      margin-top: -4px;
+    }
+    span {
+      color: $primaryColor;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-left: 0.4rem;
+    }
+    .title-dot {
+      color: $tertiaryColor;
+      text-shadow: 10px $tertiaryColor;
+    }
+    .title-note {
+      font-size: 0.7rem;
+      font-weight: 400;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $primaryColor;
+          font-weight: 400;
+          text-transform: uppercase;
+          margin-left: 2.2em;
+          transition: 0.3s color ease;
+
+          &:hover {
+            color: lighten($primaryColor, 70%);
+          }
+        }
+      }
+    }
+  }
+}
