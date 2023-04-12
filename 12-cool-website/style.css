@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(images/bg.jpg);
+  background-position: 0 -200px;
+  background-size: cover;
+  width: 100vh;
+  height: 100%;
+  color: white;
+  padding: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+header {
+  justify-content: space-between;
+}
+
+.nav-links {
+  position: absolute;
+  display: block;
+  margin-top: -10px;
+  margin-left: 400px;
+  padding: 20px;
+  background-color: rgba(24, 23, 23, 0.222);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  margin: 30px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+}
+
+a:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+li {
+  list-style: none;
+}
+
+.search {
+  position: absolute;
+  right: 40px;
+  width: 20px;
+  object-fit: contain;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.616);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.search:hover {
+  background-color: white;
+}
+
+.content {
+  position: absolute;
+  top: 150px;
+}
+
+.content h5 {
+  font-size: 30px;
+}
+
+.content span {
+  font-size: 15px;
+  color: rgb(204, 204, 204);
+  position: absolute;
+  padding-top: 7px;
+  padding-left: 3px;
+}
+
+.content h1 {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.content h6 {
+  margin-top: 22px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content p {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(220, 215, 215);
+}
+
+.cards {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.372);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+}
+
+.cards div {
+  margin: 5px 40px;
+}
+
+.cards h2 {
+  font-weight: 400;
+}
+
+.cards h3 {
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.cards h6 {
+  color: rgba(240, 248, 255, 0.276);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card2 {
+  border-right: 2px solid rgb(173, 173, 210);
+  border-left: 2px solid rgb(173, 173, 210);
+  padding: 0 60px;
+}
