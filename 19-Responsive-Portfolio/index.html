@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="link" content="https://www.youtube.com/watch?v=SQhabdckbu8" />
+    <title>Responsive Portfolio Website - Online Tutorials</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="menuToggle"></div>
+      <ul class="nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <section id="home">
+      <div class="content">
+        <h2>Enry Firmana</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nobis itaque nisi doloremque placeat sint at iusto hic fuga? Consequuntur deserunt quos quas aspernatur ut quaerat aliquam, totam neque corrupti.</p>
+        <a href="#" class="btn">Contact Me</a>
+      </div>
+      <img src="men.png" class="men" />
+    </section>
+    <section id="services">
+      <div class="secText">
+        <h2>What I Am Great At</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, minus porro, sunt architecto alias exercitationem dignissimos sequi hic assumenda at modi, dolor tempore illo? Iste?</p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="icon1.png" />
+          <h3>Web Designing</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="icon2.png" />
+          <h3>Web Development</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="icon3.png" />
+          <h3>Android Apps</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="icon4.png" />
+          <h3>Video Editing</h3>
+        </div>
+      </div>
+      <div class="center">
+        <a href="#" class="btn">Hire Me</a>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="secText">
+        <h2>My Masterpiece Collection</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque corporis adipisci maxime optio consectetur sequi necessitatibus repellendus, id sed nesciunt hic sit ipsam cupiditate.</p>
+      </div>
+      <div class="content">
+        <div class="imgBx">
+          <img src="img1.jpg" />
+        </div>
+        <div class="imgBx">
+          <img src="img2.jpg" />
+        </div>
+        <div class="imgBx">
+          <img src="img3.jpg" />
+        </div>
+        <div class="imgBx">
+          <img src="img4.jpg" />
+        </div>
+        <div class="imgBx">
+          <img src="img5.jpg" />
+        </div>
+        <div class="imgBx">
+          <img src="img6.jpg" />
+        </div>
+      </div>
+      <div class="center">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="secText">
+        <h2>Ways To Contact Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sapiente voluptates nemo voluptatem, maxime expedita amet, harum pariatur ipsam, illo sequi eum architecto doloremque ipsa.</p>
+      </div>
+      <div class="content">
+        <a href="#">
+          <ion-icon name="mail-outline"></ion-icon>
+          enryfirmana@ellokale.com
+        </a>
+        <a href="#">
+          <ion-icon name="call-outline"></ion-icon>
+          +6285245001429
+        </a>
+        <a href="#">
+          <ion-icon name="logo-skype"></ion-icon>
+          skype
+        </a>
+        <a href="#">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          whatsapp
+        </a>
+      </div>
+      <div class="center">
+        <p class="copyrights">Copyright &copy 2023 <a href="#">Online Tutorials</a>. All Right Reserved</p>
+      </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+      let list = document.querySelectorAll(".nav li");
+      function active() {
+        list.forEach((i) => i.classList.remove("active"));
+        this.classList.add("active");
+      }
+
+      list.forEach((i) => i.addEventListener("click", active));
+
+      let menuToggle = document.querySelector(".menuToggle");
+      let header = document.querySelector("header");
+      menuToggle.onclick = function () {
+        header.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
